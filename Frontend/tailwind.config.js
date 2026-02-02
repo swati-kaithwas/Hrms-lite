@@ -13,6 +13,10 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      zIndex: {
+        '50': '50',
+        '100': '100',
+      },
     },
   },
   plugins: [],

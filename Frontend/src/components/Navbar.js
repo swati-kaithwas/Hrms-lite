@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="sticky top-0 z-100 bg-gradient-to-r from-indigo-500 to-purple-700 shadow-lg">
+    <nav className="sticky top-0 z-50 bg-gradient-to-r from-indigo-500 to-purple-700 shadow-lg">
       <div className="max-w-6xl mx-auto px-8 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2 text-white text-2xl font-bold no-underline">
           <span className="text-4xl">👔</span>
