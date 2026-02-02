@@ -45,7 +45,7 @@ function AttendanceManagement() {
   }, [error]);
 
   const fetchEmployees = async () => {
-    setLoading(true);
+    // setLoading(true);
     setError(null);
     try {
       const response = await employeeAPI.getEmployees();
@@ -53,11 +53,13 @@ function AttendanceManagement() {
     } catch (err) {
       setError(err.response?.data?.detail || 'Failed to fetch employees');
     } finally {
-      setLoading(false);
+      // setLoading(false);
     }
   };
 
   const fetchAllAttendance = async () => {
+      console.log('All attendance records:');
+
     setLoading(true);
     setError(null);
     try {
@@ -76,6 +78,7 @@ function AttendanceManagement() {
       setError(err.response?.data?.detail || 'Failed to fetch attendance');
       setAttendanceRecords([]);
     } finally {
+      console.log('All attendance records fetched:');
       setLoading(false);
     }
   };
@@ -261,7 +264,7 @@ function AttendanceManagement() {
                 />
                 <button
                   onClick={handleSearchByEmployeeId}
-                  className="px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-sm font-semibold rounded-lg hover:shadow-lg transition"
+                  className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-700 text-white text-sm font-semibold rounded-lg hover:shadow-lg transition"
                 >
                   Search
                 </button>

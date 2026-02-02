@@ -254,7 +254,7 @@ function Home() {
           <div className="bg-white p-4 rounded-lg shadow-lg">
             <div className="flex justify-between items-center mb-3">
               <h3 className="text-lg font-bold text-gray-800">Recent Employees</h3>
-              <Link to="/employees" className="px-2 py-1 bg-blue-600 text-white text-xs font-semibold rounded hover:bg-blue-700">
+              <Link to="/employees" className="px-2 py-1 bg-gradient-to-r from-indigo-500 to-purple-700 text-white text-xs font-semibold rounded hover:bg-blue-700">
                 View All
               </Link>
             </div>
@@ -294,7 +294,7 @@ function Home() {
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-1.5">
                         <div
-                          className="bg-gradient-to-r from-blue-600 to-cyan-600 h-1.5 rounded-full"
+                          className="bg-gradient-to-r from-indigo-500 to-purple-700 h-1.5 rounded-full"
                           style={{ width: `${(count / stats.totalEmployees) * 100 || 0}%` }}
                         ></div>
                       </div>
@@ -343,7 +343,7 @@ function Home() {
         <h2 className="text-3xl font-bold mb-4 text-gray-800">Get Started Today</h2>
         <p className="text-gray-600 mb-8 text-lg">HRMS Lite makes employee and attendance management simple and straightforward.</p>
         <div className="flex gap-4 justify-center flex-wrap">
-          <Link to="/employees" className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-lg hover:shadow-lg transition">
+          <Link to="/employees" className="px-8 py-3 bg-gradient-to-r from-indigo-500 to-purple-700 text-white font-semibold rounded-lg hover:shadow-lg transition">
             Manage Employees
           </Link>
           <Link to="/attendance" className="px-8 py-3 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition">

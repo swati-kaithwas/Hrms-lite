@@ -271,7 +271,7 @@ function EmployeeManagement() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {employees.map(emp => (
               <div key={emp.employee_id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition z-0">
-                <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white p-6 flex justify-between items-start">
+                <div className="bg-gradient-to-r from-indigo-500 to-purple-700 text-white p-6 flex justify-between items-start">
                   <div className="flex-1 min-w-0">
                     <h3 className="text-lg font-bold truncate">{emp.name}</h3>
                     <p className="text-sm opacity-90 truncate">{emp.employee_id}</p>
