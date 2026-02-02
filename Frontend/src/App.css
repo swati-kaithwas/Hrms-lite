@@ -1,0 +1,17 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  body {
+    @apply font-poppins bg-gray-100 text-gray-800;
+  }
+  
+  html, body, #root {
+    @apply h-full;
+  }
+  
+  a {
+    @apply no-underline text-inherit;
+  }
+}
